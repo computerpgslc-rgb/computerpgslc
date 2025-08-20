@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagadian Golden School Learning Center - Official Profile</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+                    colors: {
+                        'maroon': { '900': '#6D071A', '800': '#8B0000', '700': '#A52A2A' },
+                        'gold': { '500': '#D4AF37', '400': '#FFD700' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+ 
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #A52A2A; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8B0000; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="bg-maroon-900 text-white sticky top-0 z-40 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center space-x-4">
+                <img src="IMG/logo.png" alt="School Logo" class="h-14 w-14 rounded-full border-2 border-gold-500">
+                <h1 class="text-xl md:text-2xl font-bold tracking-tight">
+                    <a href="#hero">Pagadian Golden School Learning Center</a>
+                </h1>
+            </div>
+            <nav class="hidden md:flex items-center">
+                <ul class="flex space-x-6 text-base font-medium">
+                    <li><a href="#about-us" class="py-2 border-b-2 border-transparent hover:border-gold-400 hover:text-gold-400 transition-all duration-300">About</a></li>
+                    <li><a href="#academics" class="py-2 border-b-2 border-transparent hover:border-gold-400 hover:text-gold-400 transition-all duration-300">Academics</a></li>
+                    <li><a href="#admissions" class="py-2 border-b-2 border-transparent hover:border-gold-400 hover:text-gold-400 transition-all duration-300">Admissions</a></li>
+                    <li><a href="#news-events" class="py-2 border-b-2 border-transparent hover:border-gold-400 hover:text-gold-400 transition-all duration-300">News</a></li>
+                    <li><a href="#contact" class="py-2 border-b-2 border-transparent hover:border-gold-400 hover:text-gold-400 transition-all duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-maroon-800">
+            <a href="#about-us" class="block py-2 px-4 text-sm hover:bg-maroon-700">About</a>
+            <a href="#academics" class="block py-2 px-4 text-sm hover:bg-maroon-700">Academics</a>
+            <a href="#admissions" class="block py-2 px-4 text-sm hover:bg-maroon-700">Admissions</a>
+            <a href="#news-events" class="block py-2 px-4 text-sm hover:bg-maroon-700">News & Events</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-maroon-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative flex items-center justify-center min-h-[calc(100vh-72px)] bg-cover bg-center" style="background-image: url('img/cover.jpg');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative text-center text-white p-8 max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">Excellence in Education Since 2012</h2>
+                <p class="text-xl md:text-2xl mb-8 font-light">Nurturing Minds, Building Futures in the Heart of Pagadian City</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#admissions" class="inline-block bg-gold-500 text-maroon-900 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gold-400 transition-all duration-300 transform hover:scale-105">Apply Now</a>
+                    <a href="#news-events" class="inline-block bg-maroon-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-maroon-700 transition-all duration-300 transform hover:scale-105">Latest News</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="container mx-auto my-16 p-8 reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-maroon-900">Our Foundation</h2>
+                <p class="text-lg text-gray-600 mt-2">Discover Our Mission, Vision, and Values</p>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                    <p>Pagadian Golden School Learning Center is dedicated to providing a nurturing and stimulating environment where students can achieve their full potential. Established in 2012, our school has a rich history of academic excellence and community engagement.</p>
+                    <p><strong class="font-semibold text-maroon-800">Our mission</strong> is to empower students with knowledge, skills, and values to become responsible global citizens. We foster a love for learning, encourage critical thinking, and promote respect for diversity.</p>
+                </div>
+                <div>
+                    <img src="img/community.jpg" alt="School Community" class="rounded-lg shadow-xl w-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+            </div>
+        </section>
+
+        <section id="academics" class="bg-white py-16 reveal">
+            <div class="container mx-auto px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-maroon-900">Academic Programs</h2>
+                    <p class="text-lg text-gray-600 mt-2">A Curriculum Designed for Success</p>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-maroon-800 mb-2">Preschool</h3>
+                        <p class="text-gray-700 mb-4">A play-based approach focusing on early literacy, numeracy, and social development.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-maroon-800 mb-2">Elementary (Grades 1-6)</h3>
+                        <p class="text-gray-700 mb-4">Building strong foundations in core subjects within an interactive environment.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-maroon-800 mb-2">Junior High (Grades 7-10)</h3>
+                        <p class="text-gray-700 mb-4">A comprehensive curriculum to prepare students for higher education.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="admissions" class="container mx-auto my-16 p-8 reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-maroon-900">Admissions</h2>
+                <p class="text-lg text-gray-600 mt-2">Join Our Growing Community</p>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4"></div>
+            </div>
+            <div class="max-w-4xl mx-auto bg-maroon-50/50 p-8 rounded-lg border border-maroon-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-maroon-800">Application Process</h3>
+                        <ol class="list-decimal list-inside mt-4 space-y-2 text-gray-700 text-lg">
+                            <li><strong class="font-semibold">Inquiry:</strong> Contact our office for details.</li>
+                            <li><strong class="font-semibold">Submission:</strong> Submit the application form and required documents.</li>
+                            <li><strong class="font-semibold">Enrollment:</strong> Complete the process upon acceptance.</li>
+                        </ol>
+                    </div>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="text-2xl font-semibold text-maroon-800">Enrollment Status</h3>
+                        <div class="mt-4 space-y-4 text-gray-700 text-lg">
+                            <p>
+                                <strong class="font-semibold text-maroon-900">School Year 2025-2026:</strong> Classes are now ongoing.
+                            </p>
+                            <p class="bg-gold-500/20 p-4 rounded-md border border-gold-500/30">
+                                For future enrollment inquiries, please visit the school's admission office for the application proper.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-events" class="bg-white py-16 reveal">
+            <div class="container mx-auto px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-maroon-900">Latest News & Events</h2>
+                    <p class="text-lg text-gray-600 mt-2">Stay Updated with Our School Activities</p>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 group">
+                        <img src="img/Induction.jpg" alt="Induction Ceremony" class="w-full h-48 object-cover clickable-image cursor-pointer" data-title="Induction Ceremony 2025">
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-2">August 11, 2025</p>
+                            <h3 class="text-xl font-semibold text-maroon-800 mb-2">Induction Ceremony: Success!</h3>
+                            <p class="text-gray-700 mb-4">We celebrated the official induction of our new student leaders and club officers for this school year...</p>
+                            <a href="#" class="font-semibold text-maroon-700 hover:text-maroon-900 read-more-btn group-hover:text-gold-500 transition-colors" data-title="Induction Ceremony 2025" data-content="The Induction Ceremony was a resounding success, formally welcoming our new student government officers and club leaders for the academic year. We congratulate these young leaders and look forward to their valuable contributions to our school community.">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 group">
+                        <img src="img/foam-party.jpg" alt="Aloha Splash Foam Party" class="w-full h-48 object-cover clickable-image cursor-pointer" data-title="Aloha Splash: Foam Party Highlights">
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-2">August 13, 2025</p>
+                            <h3 class="text-xl font-semibold text-maroon-800 mb-2">Aloha Splash: Foam Party!</h3>
+                            <p class="text-gray-700 mb-4">Students enjoyed a fun-filled afternoon at our 'Aloha Splash' foam party, a perfect mid-week break...</p>
+                            <a href="#" class="font-semibold text-maroon-700 hover:text-maroon-900 read-more-btn group-hover:text-gold-500 transition-colors" data-title="Aloha Splash: Foam Party Highlights" data-content="Our 'Aloha Splash' foam party was a fantastic event filled with music, fun, and laughter! It was a great way for students to unwind and bond with their classmates. Thank you to everyone who participated and made it a memorable day.">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 group">
+                        <img src="img/wika.jpg" alt="Buwan ng Wika Culmination" class="w-full h-48 object-cover clickable-image cursor-pointer" data-title="Kulminasyon ng Buwan ng Wika">
+                        <div class="p-6">
+                            <p class="text-gray-500 text-sm mb-2">August 28-29, 2025</p>
+                            <h3 class="text-xl font-semibold text-maroon-800 mb-2">Upcoming: Buwan ng Wika Culmination</h3>
+                            <p class="text-gray-700 mb-4">Get ready to celebrate Filipino language and culture at our upcoming Buwan ng Wika culminating activity...</p>
+                            <a href="#" class="font-semibold text-maroon-700 hover:text-maroon-900 read-more-btn group-hover:text-gold-500 transition-colors" data-title="Kulminasyon ng Buwan ng Wika" data-content="Join us as we celebrate the richness of the Filipino language and culture during our Buwan ng Wika culmination program. The event will feature traditional performances, poetry readings, and various contests. We invite all parents and students to attend and celebrate with us!">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto my-16 p-8 reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-maroon-900">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mt-2">We're here to help with any questions you may have</p>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6 text-lg text-gray-700">
+                    <p class="flex items-start"><span class="text-gold-500 mt-1 mr-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </span>Address: Maria Basa St. Sta. Maria Dist., Pagadian City, 7016</p>
+                    <p class="flex items-center"><span class="text-gold-500 mr-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </span>Email: <a href="mailto:computerpgslc@gmail.com" class="text-maroon-700 hover:underline">computerpgslc@gmail.com</a></p>
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/xwpqdnbg" method="POST" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maroon-500 transition">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maroon-500 transition">
+                        <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-maroon-500 transition"></textarea>
+                        <button type="submit" class="bg-maroon-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-maroon-700 transition-all duration-300 transform hover:scale-105">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-maroon-900 text-white p-8">
+        <div class="container mx-auto text-center text-md">
+            <p>&copy; 2025 Pagadian Golden School Learning Center. All rights reserved.</p>
+            <p class="text-sm opacity-70 mt-1">Empowering the next generation of leaders in Pagadian City.</p>
+        </div>
+    </footer>
+
+    <div id="schoolModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4 transition-opacity duration-300">
+        <div class="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full relative transform transition-transform duration-300 scale-95">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-3xl">&times;</button>
+            <h3 id="modalTitle" class="text-3xl font-bold text-maroon-900 mb-4 border-b-2 border-gold-500 pb-2"></h3>
+            <div id="modalContent" class="text-lg text-gray-700 leading-relaxed max-h-[60vh] overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- NO CHANGES TO THIS PART ---
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            const mobileLinks = mobileMenu.getElementsByTagName('a');
+            for (let link of mobileLinks) {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+    
+            // --- NO CHANGES TO THIS PART ---
+            // Modal Functionality
+            const schoolModal = document.getElementById('schoolModal');
+            const modalInner = schoolModal.querySelector('div');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            const readMoreBtns = document.querySelectorAll('.read-more-btn');
+            const admissionsKitBtn = document.getElementById('admissionsKitBtn');
+    
+            const openModal = (title, content) => {
+                modalTitle.textContent = title;
+                modalContent.innerHTML = content; // Allows us to pass HTML like an <img> tag
+                schoolModal.classList.remove('hidden');
+                setTimeout(() => {
+                    schoolModal.style.opacity = '1';
+                    modalInner.style.transform = 'scale(1)';
+                }, 10);
+            };
+            const closeModal = () => {
+                schoolModal.style.opacity = '0';
+                modalInner.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    schoolModal.classList.add('hidden');
+                }, 300);
+            };
+    
+            closeModalBtn.addEventListener('click', closeModal);
+            schoolModal.addEventListener('click', (e) => e.target === schoolModal && closeModal());
+            
+            readMoreBtns.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Pass the content directly for "Read More"
+                    openModal(e.target.dataset.title, e.target.dataset.content);
+                });
+            });
+    
+            // --- START OF NEW CODE ---
+            // Add click listener for images
+            const clickableImages = document.querySelectorAll('.clickable-image');
+            clickableImages.forEach(image => {
+                image.addEventListener('click', (e) => {
+                    const title = e.target.dataset.title;
+                    const imgSrc = e.target.src;
+                    // Create an image tag as a string to pass to the modal
+                    const imageContent = `<img src="${imgSrc}" alt="${title}" class="w-full h-auto rounded-lg object-contain">`;
+                    openModal(title, imageContent);
+                });
+            });
+            // --- END OF NEW CODE ---
+    
+            if (admissionsKitBtn) {
+                admissionsKitBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal('Download Forms', 'In a real application, clicking this would start a file download of the necessary admission forms. Thank you!');
+                });
+            }
+    
+            // Scroll Animation Observer (No changes here)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
